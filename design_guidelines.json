@@ -1,0 +1,150 @@
+{
+  "project_name": "CafBrow",
+  "app_type": "restaurant/cafe marketing website",
+  "craft_direction": "Awwwards-level, bold flat-illustration editorial aesthetic, kinetic typography, premium motion.",
+  "theme": "Light base with dark contrast sections",
+  "colors": {
+    "background": {
+      "light": "#F9F6F0",
+      "dark": "#1E1E1E"
+    },
+    "text": {
+      "primary_on_light": "#1E1E1E",
+      "secondary_on_light": "#4A4A4A",
+      "primary_on_dark": "#F9F6F0",
+      "secondary_on_dark": "#D1D1D1"
+    },
+    "accents": {
+      "terracotta": "#E07A5F",
+      "mustard": "#F2CC8F",
+      "teal_green": "#2A9D8F"
+    },
+    "surface": {
+      "light_card": "#FFFFFF",
+      "dark_card": "#2A2A2A"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Playfair Display, serif",
+      "body": "Manrope, sans-serif",
+      "accent": "Cormorant Garamond, serif"
+    },
+    "scales": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-black tracking-tighter leading-none",
+      "h2": "text-4xl sm:text-5xl font-bold tracking-tight leading-tight",
+      "h3": "text-2xl sm:text-3xl font-semibold leading-snug",
+      "body_large": "text-lg sm:text-xl leading-relaxed",
+      "body": "text-base leading-relaxed",
+      "label": "text-xs tracking-[0.2em] uppercase font-bold"
+    },
+    "rules": [
+      "Headings must use tight letter spacing (tracking-tight or tracking-tighter).",
+      "Do NOT use Inter or Roboto for headings.",
+      "Use kinetic text reveals for main headlines."
+    ]
+  },
+  "layouts": {
+    "spacing_system": "Generous spacing philosophy. Use p-8, p-12, p-16, p-24.",
+    "grid_modes": "Bento-style grids for Gallery and About features. Asymmetrical layouts with overlapping elements.",
+    "alignment": "Optical alignment over geometrical alignment. Left-align dense text."
+  },
+  "visual_enhancers": {
+    "borders_and_shadows": "Clipped frames for images. 1px solid borders for structure. Soft layered shadows for cards.",
+    "textures": "Subtle grain texture overlay to enhance the editorial/print feel.",
+    "motion": "Lenis for smooth scroll. Framer Motion for line-by-line text reveals and scroll-triggered fade-ups."
+  },
+  "components": {
+    "hero": "Full height or 80vh. Uses provided background illustration with parallax effect. Large kinetic type with masked line-by-line reveal.",
+    "marquee": "Slow editorial marquee used as a section divider. Large outlined text or serif text.",
+    "menu_tabs": "Custom styled tabs (override Shadcn defaults). Active state uses terracotta or mustard.",
+    "menu_cards": "Image on top or side, minimalist description, clean price tag. High-quality image treatments.",
+    "about_chapters": "Numbered manifesto style (e.g., '01.', '02.'). Large serif numerals.",
+    "gallery_carousel": "Framer Motion or Swiper. Large images, drag to scroll, hide scrollbar.",
+    "reservation_form": "Minimalist inputs, bottom border only or softly rounded inputs. Custom select for time/date. Form validation.",
+    "navigation": "Sticky nav with glassmorphism (backdrop-blur-md bg-[#F9F6F0]/80). Do not use fully transparent nav.",
+    "footer": "Large typography for CTA ('Let\\'s Talk' or 'Reserve'). Dark theme (Charcoal bg)."
+  },
+  "image_urls": {
+    "hero_backgrounds": [
+      {
+        "url": "https://customer-assets-39nsmqrw.emergentagent.net/job_coffee-shop-pro-8/artifacts/ss96sxei_empty-coffee-shop-or-cafe-flat-design-background-illustration-free-vector.jpg",
+        "category": "Hero Background Light",
+        "description": "Bright scene flat illustration"
+      },
+      {
+        "url": "https://customer-assets-39nsmqrw.emergentagent.net/job_coffee-shop-pro-8/artifacts/uwa4zoat_cafe-illustration-of-interior-with-bar-stand-table-and-armchairs-in-flat-cartoon-hand-drawn-landing-page-restaurant-background-templates-vector.jpg",
+        "category": "Dark Section Background",
+        "description": "Dark scene cafe illustration"
+      }
+    ],
+    "gallery_and_interior": [
+      {
+        "url": "https://images.pexels.com/photos/20825644/pexels-photo-20825644.jpeg",
+        "category": "Gallery",
+        "description": "Rustic decor, warm lighting"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1709548145082-04d0cde481d4",
+        "category": "Gallery",
+        "description": "Dimly lit restaurant interior"
+      }
+    ],
+    "menu_items": [
+      {
+        "url": "https://images.pexels.com/photos/459489/pexels-photo-459489.jpeg",
+        "category": "Menu - Coffee",
+        "description": "Latte art on blue cup"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1541167760496-1628856ab772",
+        "category": "Menu - Coffee",
+        "description": "Person making latte art"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1610440042657-612c34d95e9f",
+        "category": "Menu - Fast Food",
+        "description": "Gourmet burger"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1582461833047-2aeb4f8af173",
+        "category": "Menu - Dessert",
+        "description": "Pastries"
+      }
+    ]
+  },
+  "motion_and_libraries": {
+    "framer_motion": "Required for kinetic typography (line-by-line reveal), scroll-triggered fade-ups, and smooth transitions.",
+    "lenis": "Required for smooth scrolling experience.",
+    "react_fast_marquee": "For the slow editorial marquee text.",
+    "lucide_react": "For UI icons."
+  },
+  "accessibility": {
+    "contrast": "Ensure text over images has sufficient contrast or uses gradient overlays (e.g., bg-black/40).",
+    "interactive": "All interactive elements must have clear hover and focus states.",
+    "testing": "Add data-testid attributes to all interactive and key informational elements."
+  },
+  "instructions_to_main_agent": [
+    "Use Playfair Display for headings and Manrope for body text.",
+    "Avoid standard Bootstrap-style columns; use asymmetrical, bento grids or overlapping layouts.",
+    "The Hero section MUST use the provided illustrations with a parallax effect and a large masked kinetic text reveal.",
+    "Use a pure light theme with specific sections set in Charcoal (#1E1E1E) for contrast.",
+    "Never use fully transparent backgrounds for the sticky header; use backdrop-blur.",
+    "Incorporate the required sections: Hero, Intro (manifesto style with marquee), Menu (tabs and cards), About Us, Contact/Reservation Form, Gallery Carousel, Footer.",
+    "Forms should have custom minimalist styling with proper validation.",
+    "Images should have deliberate editorial treatments (e.g., clipped edges or specific aspect ratios)."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic centered layouts or simplistic gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters where appropriate.",
+    "DO NOT apply universal transition (e.g., transition: all). Add transitions for specific interactive elements.",
+    "DO NOT center align the app container in App.css.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Every interaction needs micro-animations.",
+    "Do not use AI assistant Emoji characters for icons.",
+    "Use 'sonner' for toasts if needed.",
+    "Ensure the application structure follows a single-page marketing website flow.",
+    "Prioritize Shadcn components for complex interactions but heavily customize their appearance to fit the editorial brand."
+  ]
+}
