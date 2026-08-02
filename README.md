@@ -100,7 +100,7 @@ yarn install
 # set REACT_APP_BACKEND_URL in frontend/.env (e.g. http://localhost:8001)
 yarn start
 ```
-Open http://localhost:3000
+
 
 ---
 
